@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
 export const Count = () => {
-    const [likes, setlikes] = useState(0)
+    const [likes, setLikes] = useState(0)
     
     const increment = () => {
-        setlikes(likes + 1)
+        setLikes(likes + 1)
     }
 
     const decrement = () => {
-        setlikes(likes - 1)
+        setLikes(likes - 1)
     }
 
     return (

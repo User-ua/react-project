@@ -1,0 +1,321 @@
+@font-face{
+	font-family: Gilroy;
+	font-display: swap;
+	src: url("../fonts/Gilroy-Black.woff2") format("woff2"), url("../fonts/Gilroy-Black.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face{
+	font-family: Gilroy;
+	font-display: swap;
+	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face{
+	font-family: Gilroy;
+	font-display: swap;
+	src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face{
+	font-family: Gilroy;
+	font-display: swap;
+	src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face{
+	font-family: Gilroy;
+	font-display: swap;
+	src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face{
+	font-family: Gilroy;
+	font-display: swap;
+	src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+	font-family: Gilroy;
+	font-display: swap;
+	src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face{
+	font-family: Gilroy;
+	font-display: swap;
+	src: url("../fonts/Gilroy-Thin.woff2") format("woff2"), url("../fonts/Gilroy-Thin.woff") format("woff");
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face{
+	font-family: Gilroy;
+	font-display: swap;
+	src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face{
+	font-family: Gilroy;
+	font-display: swap;
+	src: url("../fonts/Gilroy-UltraLight.woff2") format("woff2"), url("../fonts/Gilroy-UltraLight.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+* {
+    font-family: Gilroy;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    width: auto;
+    height: 400px;
+}
+
+.header {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: green;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 32px;
+    color: white;
+    width: auto;
+    height: 50px;
+    padding-top: 5px;
+}
+
+.button {
+    height: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #191970; 
+    border-radius: 88px;
+    padding: 0px 30px;
+    cursor: pointer;
+    border: 1px solid red;
+}
+
+.btn {
+    width: 30px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn--play {
+    background: url('../img/play.svg') center/70% 70% no-repeat;   
+}
+
+.btn--prev {
+    background: url('../img/prev.svg') center/100% 100% no-repeat;   
+}
+
+.btn--pause {
+    background: url('../img/pause.svg') center/70% 70% no-repeat;   
+}
+
+.btn--next {
+    background: url('../img/next.svg') center/100% 100% no-repeat;  
+}
+
+.lesson-wrapper {
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background: green;
+}
+
+.lesson-wrapper::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+   
+}
+
+.lesson-list {
+    display: flex;
+    padding: 20px 10px;
+    list-style: none;
+}
+
+.lesson-item {
+    margin-right: 30px;    
+}
+
+.lesson {
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+.lessoncontainer {
+    background: url('../img/les1.jpg') left/100% 100% no-repeat;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.lesson-block-wrapper {
+    display: flex;
+    margin: 10px;
+    border: 1px solid green;
+    height: 200px;
+}
+
+.title {
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.lesson-image {
+    background: url('../img/ticherr.webp') left/100% 80% no-repeat;
+    width: 30%;
+}
+
+.lesson-watch {
+    margin: 0;
+    width: 70%;
+    padding: 10px;
+    
+    
+}
+
+.ukrtext {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.engtext {
+    font-size: 24px;
+    font-weight: 600;
+    width: auto;
+    color: red;
+    cursor: pointer;
+}
+
+.lesson-nav {
+    padding: 10px;
+    width: auto;
+}
+
+.dictonary {
+    padding: 10px;
+}
+
+.dictonary-block {
+    padding: 10px;
+    border: 1px solid green;
+    width: auto;
+    min-height: 200px;
+}
+
+.dictonary-word-wrapper {
+    padding: 0;
+    list-style: none;
+}
+
+.dictonary-word-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dictonary-word {
+    font-weight: 600;
+    font-size: 20px;
+    color: #191970;
+    cursor: pointer;
+}
+
+.dictonary-word-examples {
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+    list-style: none;
+}
+
+.button-block {
+    display: flex;
+    align-items: center;
+}
+
+.button-clouse {
+    position: relative;
+    border: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+}
+
+.button-clouse::before {
+    position: absolute;
+    content: "";
+    background: #7B7E85;
+    width: 16px;
+    height: 2px;    
+    transform:rotate(45deg);
+    top: 7px;
+    left: 0px;
+}
+
+.button-clouse::after {
+    position: absolute;
+    content: "";
+    background: #7B7E85;
+    width: 16px;
+    height: 2px;    
+    transform:rotate(-45deg);
+    top: 7px;
+    left: 0px;
+}
+
+.button-lern {
+    margin-right: 5px;
+    position: relative;
+    border: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+}
+
+.button-lern::before {
+    position: absolute;
+    content: "";
+    background: #7B7E85;
+    width: 10px;
+    height: 2px;    
+    transform:rotate(45deg);
+    top: 7px;
+    left: 0px;
+}
+
+.button-lern::after {
+    position: absolute;
+    content: "";
+    background: #7B7E85;
+    width: 10px;
+    height: 2px;    
+    transform:rotate(-45deg);
+    top: 7px;
+    left: 6px;
+}
